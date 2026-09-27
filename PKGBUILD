@@ -10,10 +10,11 @@ depends=('quickshell' 'slurp' 'grim' 'tesseract' 'tesseract-data-rus' 'tesseract
 makedepends=('cargo' 'rust')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
 sha256sums=('SKIP')
+options=('!lto' '!debug')
 
 build() {
     cd "$pkgname-$pkgver"
-    cargo build --release --locked
+    cargo build --release --offline
 }
 
 package() {
