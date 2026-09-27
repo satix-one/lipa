@@ -1,4 +1,4 @@
-# Maintainer: Vladislav Zubkov <satix@...>
+# Maintainer: Владислав Александрович Зубков <satix@...>
 pkgname=lipa
 pkgver=0.2.0
 pkgrel=1
@@ -12,15 +12,23 @@ source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
 sha256sums=('SKIP')
 options=('!lto' '!debug')
 
+prepare() {
+    cd "$pkgname-$pkgver"
+    export RUSTUP_TOOLCHAIN=stable
+    cargo fetch --target "$(rustc -vV | grep host | cut -d' ' -f2)"
+}
+
 build() {
     cd "$pkgname-$pkgver"
-    cargo build --release --offline
+    export RUSTUP_TOOLCHAIN=stable
+    export CARGO_TARGET_DIR=target
+    cargo build --release --frozen
 }
 
 package() {
     cd "$pkgname-$pkgver"
     # Ставим бинарник
     install -Dm755 "target/release/lipa" "$pkgdir/usr/bin/lipa"
-    # Ставим переименованный QML-файл в системную папку
+    # Ставим QML-файл в системную папку
     install -Dm644 "lipa.qml" "$pkgdir/usr/share/lipa/lipa.qml"
 }
