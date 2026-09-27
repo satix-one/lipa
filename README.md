@@ -54,28 +54,4 @@ makepkg -si
 
 2. Select the desired screen area containing the text you want to translate.satix@nixos \~> # 2. Добавь файл в индекс Git
 
-                  git add README.md
-
-                  \# 3. Сделай коммит
-
-                  git commit -m "docs: add bilingual README"
-
-                  \# 4. Отправь изменения на GitHub
-
-                  git push
-
-   fatal: not a git repository (or any parent up to mount point /)
-
-   Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
-
-   fatal: not a git repository (or any parent up to mount point /)
-
-   Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
-
-   fatal: not a git repository (or any parent up to mount point /)
-
-   Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
-
-   satix@nixos \~ \[128\]>
-
 3. View the translation result in the pop-up interface.
