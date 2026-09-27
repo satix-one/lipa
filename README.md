@@ -1,9 +1,5 @@
 # lipa
 
-[Репозиторий на GitHub](https://github.com/satix-one/lipa) | [GitHub Repository](https://github.com/satix-one/lipa)
-
----
-
 ### Русский
 
 Легковесный инструмент для перевода текста с экрана под Wayland, написанный на Rust и Quickshell.
@@ -12,13 +8,25 @@
 
 Клонируйте репозиторий и соберите пакет:
 
-```bash
+```
 git clone https://github.com/satix-one/lipa.git
 cd lipa
 makepkg -si
+
 ```
 
----
+#### Использование
+
+1. Запустите приложение из терминала или через меню вашего окружения:
+
+   ```
+   lipa
+   
+   ```
+
+2. Выделите нужную область экрана с текстом, который хотите перевести.
+
+3. Просмотрите результат перевода в появившемся интерфейсе.
 
 ### English
 
@@ -28,8 +36,46 @@ A lightweight Wayland screen translation tool built with Rust and Quickshell.
 
 Clone the repository and build the package:
 
-```bash
+```
 git clone https://github.com/satix-one/lipa.git
 cd lipa
 makepkg -si
+
 ```
+
+#### Usage
+
+1. Launch the application from your terminal or desktop environment:
+
+   ```
+   lipa
+   
+   ```
+
+2. Select the desired screen area containing the text you want to translate.satix@nixos \~> # 2. Добавь файл в индекс Git
+
+                  git add README.md
+
+                  \# 3. Сделай коммит
+
+                  git commit -m "docs: add bilingual README"
+
+                  \# 4. Отправь изменения на GitHub
+
+                  git push
+
+   fatal: not a git repository (or any parent up to mount point /)
+
+   Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+   fatal: not a git repository (or any parent up to mount point /)
+
+   Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+   fatal: not a git repository (or any parent up to mount point /)
+
+   Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+   satix@nixos \~ \[128\]>
+
+3. View the translation result in the pop-up interface.
