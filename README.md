@@ -52,6 +52,6 @@ makepkg -si
    
    ```
 
-2. Select the desired screen area containing the text you want to translate.satix@nixos \~> # 2. Добавь файл в индекс Git
+2. Select the desired screen area containing the text you want to translate.
 
 3. View the translation result in the pop-up interface.
