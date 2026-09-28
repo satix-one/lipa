@@ -2,7 +2,7 @@
 
 ### Русский
 
-Это чистый ВАЙБ КОД !!!! ,зарание извините.
+### Это чистый ВАЙБ КОД !!!! ,зарание извините.
 
 Легковесный инструмент для перевода текста с экрана под Wayland, написанный на Rust и Quickshell.
 
@@ -32,7 +32,7 @@ makepkg -si
 
 ### English
 
-This is VIBE CODING!!
+### This is VIBE CODING!!
  
 A lightweight Wayland screen translation tool built with Rust and Quickshell.
 
